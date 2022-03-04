@@ -80,10 +80,10 @@ class Exams extends Component {
     // Converting time to UTC
     const newExamStartDateTime = moment(
       String(document.getElementById("newExamStartDateTime").value)
-    );
+    ).toISOString();
     const newExamEndDateTime = moment(
       String(document.getElementById("newExamEndDateTime").value)
-    );
+    ).toISOString();
 
     console.log(newExamName);
     console.log(newExamClassId);
